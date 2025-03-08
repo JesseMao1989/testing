@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Welcome to MyWebsite2000</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {
+            background-color: #6699CC;
+            font-family: Verdana, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background-image: url('data:image/gif;base64,R0lGODlhZABkALMAAAAAAP///3CAkK6ztdXZ3Ozu8PLz9P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAcALAAAAABkAGQAAAT/8MlJq7046827/2AojmRpnmiqrmzrvnAsz3Rt33iu73zv/8CgcEgsGo/IpHLJbDqf0Kh0Sq1ar9isdsvter/gsHhMLpvP6LR6zW673/C4fE6v2+/4vH7P7/v/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8AAwocSLCgwYMIEypcyLChw4cQI0qcSLGixYsYM2rcyLGjx48gj0MCAADs');
+        }
+        
+        #container {
+            width: 760px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border-left: 1px solid #000000;
+            border-right: 1px solid #000000;
+            box-shadow: 0px 0px 10px #333333;
+        }
+        
+        #header {
+            background-color: #003366;
+            background-image: linear-gradient(to bottom, #003366, #6699CC);
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 5px solid #FF9900;
+        }
+        
+        #header h1 {
+            font-size: 24px;
+            margin: 0;
+            text-shadow: 2px 2px 2px #000000;
+        }
+        
+        #content {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        .login-box {
+            width: 400px;
+            margin: 0 auto;
+            background-color: #EFEFEF;
+            border: 1px solid #CCCCCC;
+            padding: 20px;
+        }
+        
+        .login-table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        
+        .login-table td {
+            padding: 5px;
+            text-align: left;
+        }
+        
+        .login-table .label {
+            font-weight: bold;
+            width: 120px;
+        }
+        
+        input[type="text"], input[type="password"] {
+            width: 200px;
+            border: 2px inset #CCCCCC;
+            padding: 3px;
+            font-family: Verdana, Arial, sans-serif;
+        }
+        
+        .button {
+            background-color: #FF9900;
+            background-image: linear-gradient(to bottom, #FFCC66, #FF9900);
+            border: 2px outset #FF9900;
+            padding: 3px 10px;
+            font-weight: bold;
+            color: #000000;
+            cursor: pointer;
+        }
+        
+        .button:active {
+            border-style: inset;
+        }
+        
+        #footer {
+            background-color: #003366;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+            border-top: 5px solid #FF9900;
+            clear: both;
+        }
+        
+        .counter {
+            font-family: "Courier New", monospace;
+            background-color: #000000;
+            color: #00FF00;
+            padding: 2px 5px;
+            border: 1px solid #666666;
+            font-weight: bold;
+        }
+        
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        
+        .browser-notice {
+            font-size: 10px;
+            margin-top: 20px;
+            color: #666666;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>MyWebsite2000</h1>
+            <div style="font-size: 12px; margin-top: 5px;">The Best Place on the World Wide Web!</div>
+        </div>
+        
+        <div id="content">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="20%" valign="top">
+                        <div style="padding: 10px; background-color: #EFEFEF; border: 1px solid #CCCCCC;">
+                            <div style="font-weight: bold; text-align: center; margin-bottom: 10px; background-color: #003366; color: #FFFFFF; padding: 3px;">NAVIGATION</div>
+                            <div style="text-align: left;">
+                                <a href="#">Home</a><br>
+                                <a href="#">About Us</a><br>
+                                <a href="#">Products</a><br>
+                                <a href="#">Services</a><br>
+                                <a href="#">Contact</a><br>
+                                <a href="#"><b>Login</b></a><br>
+                                <a href="#">Register</a><br>
+                            </div>
+                            
+                            <div style="margin-top: 20px; text-align: center;">
+                                <div style="font-weight: bold; text-align: center; margin-bottom: 10px; background-color: #003366; color: #FFFFFF; padding: 3px;">VISITORS</div>
+                                <span class="counter">000123456</span>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="80%" valign="top">
+                        <div style="padding: 10px;">
+                            <div style="text-align: center; margin-bottom: 20px;">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="400" height="60" alt="Welcome Banner" style="border: 1px solid #CCCCCC; background-color: #003366;">
+                            </div>
+                            
+                            <div class="login-box">
+                                <div style="font-weight: bold; font-size: 14px; margin-bottom: 15px;">Member Login</div>
+                                
+                                <form action="#" method="post">
+                                    <table class="login-table">
+                                        <tr>
+                                            <td class="label">Username:</td>
+                                            <td><input type="text" name="username"></td>
+                                        </tr>
+                                        <tr>
+                                            <td class="label">Password:</td>
+                                            <td><input type="password" name="password"></td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td><input type="checkbox" name="remember"> Remember me</td>
+                                        </tr>
+                                        <tr>
+                                            <td></td>
+                                            <td>
+                                                <input type="submit" value="Login" class="button">
+                                                <input type="button" value="Register" class="button">
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </form>
+                                
+                                <div style="margin-top: 15px; font-size: 11px;">
+                                    <a href="#">Forgot your password?</a>
+                                </div>
+                                
+                                <div class="blink" style="margin-top: 15px; color: #FF0000; font-weight: bold;">
+                                    New users get 30 days free access!
+                                </div>
+                            </div>
+                            
+                            <div class="browser-notice">
+                                This site is best viewed with Internet Explorer 6.0 or Netscape Navigator 4.7 at 800x600 resolution.
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="footer">
+            Copyright &copy; 2000-2003 MyWebsite2000. All Rights Reserved.<br>
+            <span style="font-size: 10px;">This page has been tested on IE6 and Netscape 4.7</span>
+        </div>
+    </div>
+</body>
+</html>     
