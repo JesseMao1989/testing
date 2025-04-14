@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Model Context Protocol (MCP) Information Center</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <style type="text/css">
+        body {
+            background-color: #6699CC;
+            font-family: Verdana, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: #333333;
+            background-image: url('data:image/gif;base64,R0lGODlhZABkALMAAAAAAP///3CAkK6ztdXZ3Ozu8PLz9P///wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACH5BAEAAAcALAAAAABkAGQAAAT/8MlJq7046827/2AojmRpnmiqrmzrvnAsz3Rt33iu73zv/8CgcEgsGo/IpHLJbDqf0Kh0Sq1ar9isdsvter/gsHhMLpvP6LR6zW673/C4fE6v2+/4vH7P7/v/gIGCg4SFhoeIiYqLjI2Oj5CRkpOUlZaXmJmam5ydnp+goaKjpKWmp6ipqqusra6vsLGys7S1tre4ubq7vL2+v8DBwsPExcbHyMnKy8zNzs/Q0dLT1NXW19jZ2tvc3d7f4OHi4+Tl5ufo6err7O3u7/Dx8vP09fb3+Pn6+/z9/v8AAwocSLCgwYMIEypcyLChw4cQI0qcSLGixYsYM2rcyLGjx48gj0MCAADs');
+        }
+        
+        #container {
+            width: 760px;
+            margin: 0 auto;
+            background-color: #FFFFFF;
+            border-left: 1px solid #000000;
+            border-right: 1px solid #000000;
+            box-shadow: 0px 0px 10px #333333;
+        }
+        
+        #header {
+            background-color: #003366;
+            background-image: linear-gradient(to bottom, #003366, #6699CC);
+            color: #FFFFFF;
+            padding: 10px;
+            text-align: center;
+            border-bottom: 5px solid #FF9900;
+        }
+        
+        #header h1 {
+            font-size: 24px;
+            margin: 0;
+            text-shadow: 2px 2px 2px #000000;
+        }
+        
+        #content {
+            padding: 20px;
+        }
+        
+        .info-box {
+            background-color: #EFEFEF;
+            border: 1px solid #CCCCCC;
+            padding: 15px;
+            margin-bottom: 20px;
+        }
+        
+        .section-header {
+            background-color: #003366;
+            color: #FFFFFF;
+            font-weight: bold;
+            padding: 5px;
+            margin-bottom: 10px;
+        }
+        
+        .blink {
+            animation: blinker 1s linear infinite;
+        }
+        
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        
+        .counter {
+            font-family: "Courier New", monospace;
+            background-color: #000000;
+            color: #00FF00;
+            padding: 2px 5px;
+            border: 1px solid #666666;
+            font-weight: bold;
+        }
+        
+        .browser-notice {
+            font-size: 10px;
+            margin-top: 20px;
+            color: #666666;
+            text-align: center;
+        }
+        
+        #footer {
+            background-color: #003366;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 10px;
+            font-size: 11px;
+            border-top: 5px solid #FF9900;
+            clear: both;
+        }
+        
+        .button {
+            background-color: #FF9900;
+            background-image: linear-gradient(to bottom, #FFCC66, #FF9900);
+            border: 2px outset #FF9900;
+            padding: 3px 10px;
+            font-weight: bold;
+            color: #000000;
+            cursor: pointer;
+            text-decoration: none;
+            display: inline-block;
+        }
+        
+        .button:active {
+            border-style: inset;
+        }
+        
+        ul {
+            list-style-image: url('data:image/gif;base64,R0lGODlhCgAKAIAAAP//AP///yH5BAEAAAEALAAAAAAKAAoAAAIRjI+pywcPnoupTFaz3rxzAgA7');
+            margin-left: 20px;
+        }
+        
+        .new {
+            color: #FF0000;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div id="header">
+            <h1>Model Context Protocol (MCP)</h1>
+            <div style="font-size: 12px; margin-top: 5px;">The Future of AI Integration!</div>
+        </div>
+        
+        <div id="content">
+            <table width="100%" border="0" cellspacing="0" cellpadding="0">
+                <tr>
+                    <td width="20%" valign="top">
+                        <div style="padding: 10px; background-color: #EFEFEF; border: 1px solid #CCCCCC;">
+                            <div style="font-weight: bold; text-align: center; margin-bottom: 10px; background-color: #003366; color: #FFFFFF; padding: 3px;">NAVIGATION</div>
+                            <div style="text-align: left;">
+                                <a href="#what-is-mcp">What is MCP?</a><br>
+                                <a href="#why-mcp">Why MCP?</a><br>
+                                <a href="#architecture">Architecture</a><br>
+                                <a href="#applications">Applications</a><br>
+                                <a href="#popular-servers">Popular Servers</a><br>
+                                <a href="#companies">Companies Using MCP</a><br>
+                                <a href="#resources">Resources</a><br>
+                            </div>
+                            
+                            <div style="margin-top: 20px; text-align: center;">
+                                <div style="font-weight: bold; text-align: center; margin-bottom: 10px; background-color: #003366; color: #FFFFFF; padding: 3px;">VISITORS</div>
+                                <span class="counter">000023745</span>
+                            </div>
+                            
+                            <div style="margin-top: 20px; text-align: center;">
+                                <div class="blink" style="color: #FF0000; font-weight: bold; margin-bottom: 10px;">
+                                    NEW: C# SDK Released!
+                                </div>
+                                <a href="#" class="button">Download SDK</a>
+                            </div>
+                        </div>
+                    </td>
+                    <td width="80%" valign="top">
+                        <div style="padding: 10px;">
+                            <div style="text-align: center; margin-bottom: 20px;">
+                                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw==" width="500" height="60" alt="MCP Banner" style="border: 1px solid #CCCCCC; background-color: #003366;">
+                            </div>
+                            
+                            <div class="info-box" id="what-is-mcp">
+                                <div class="section-header">What is Model Context Protocol (MCP)?</div>
+                                <p>Model Context Protocol (MCP) is an open-source standard developed by Anthropic, the company behind the Claude AI chatbot. MCP allows AI models to connect to external data, read them, and execute actions through a universal connector.</p>
+                                <p>Think of MCP like a USB-C port for AI applications. Just as USB-C provides a standardized way to connect your devices to various peripherals and accessories, MCP provides a standardized way to connect AI models to different data sources and tools.</p>
+                                <p class="new">UPDATE (April 2025): Both OpenAI and Google have pledged to support the MCP standard!</p>
+                            </div>
+                            
+                            <div class="info-box" id="why-mcp">
+                                <div class="section-header">Why MCP?</div>
+                                <p>MCP helps you build agents and complex workflows on top of Large Language Models (LLMs). LLMs frequently need to integrate with data and tools, and MCP provides:</p>
+                                <ul>
+                                    <li>A growing list of pre-built integrations that your LLM can directly plug into</li>
+                                    <li>The flexibility to switch between LLM providers and vendors</li>
+                                    <li>Best practices for securing your data within your infrastructure</li>
+                                    <li>A universal connector to interact with external data</li>
+                                </ul>
+                                <p>Without MCP, companies have to build custom connectors for each application. MCP replaces all that with a common protocol to interact with external data.</p>
+                            </div>
+                            
+                            <div class="info-box" id="architecture">
+                                <div class="section-header">MCP Architecture</div>
+                                <p>At its core, MCP follows a client-server architecture where a host application can connect to multiple servers:</p>
+                                <ul>
+                                    <li><b>MCP Hosts:</b> Programs like Claude Desktop, IDEs, or AI tools that want to access data through MCP</li>
+                                    <li><b>MCP Clients:</b> Protocol clients that maintain 1:1 connections with servers</li>
+                                    <li><b>MCP Servers:</b> Lightweight programs that each expose specific capabilities through the standardized Model Context Protocol</li>
+                                    <li><b>Local Data Sources:</b> Your computer's files, databases, and services that MCP servers can securely access</li>
+                                    <li><b>Remote Services:</b> External systems available over the internet (e.g., through APIs) that MCP servers can connect to</li>
+                                </ul>
+                                <p>It establishes a two-way connection: one is through the MCP server and another is through the MCP client. For example, the Claude Desktop app is an MCP client that asks for data, and the MCP server is the connector that provides the data.</p>
+                            </div>
+                            
+                            <div class="info-box" id="applications">
+                                <div class="section-header">Applications of MCP</div>
+                                <p>MCP has numerous applications in AI integration:</p>
+                                <ul>
+                                    <li>Connect AI models with your local file system to read and modify files</li>
+                                    <li>Access cloud services like Google Drive, GitHub, or Slack from within AI chatbots</li>
+                                    <li>Allow AI models to search through your personal data securely</li>
+                                    <li>Build custom workflows that connect AI with your own tools and services</li>
+                                    <li>Enable AI agents to perform more reliable and powerful actions</li>
+                                </ul>
+                                <p>As we enter the agentic AI era, MCP is going to play a huge role in making action-driven AI assistants more versatile and powerful.</p>
+                            </div>
+                            
+                            <div class="info-box" id="popular-servers">
+                                <div class="section-header">Popular MCP Servers</div>
+                                <p>While there are hundreds of community-driven MCP servers made by independent developers, here are some popular ones:</p>
+                                <ul>
+                                    <li><b>Google Drive MCP server:</b> Search and access files from Google Drive</li>
+                                    <li><b>Filesystem MCP server:</b> Read, write, create, delete, move, and search files on your local computer</li>
+                                    <li><b>Slack MCP server:</b> Manage channels, post messages, reply to threads, retrieve messages</li>
+                                    <li><b>GitHub MCP server:</b> Manage repositories, perform file operations, create branches</li>
+                                    <li><b>Google Calendar MCP:</b> Check schedules, add or delete events</li>
+                                    <li><b>Gmail MCP:</b> Access and manage your emails</li>
+                                </ul>
+                                <p>Other popular MCP servers include ones for Airtable, Airbnb, Apple Calendar, Discord, Excel, Figma, Notion, Spotify, Telegram, Twitter, YouTube, and more.</p>
+                            </div>
+                            
+                            <div class="info-box" id="companies">
+                                <div class="section-header">Companies Adopting MCP</div>
+                                <p>Several major tech companies have announced support for MCP:</p>
+                                <ul>
+                                    <li><b>Anthropic:</b> Creator of MCP and the Claude AI assistant</li>
+                                    <li><b>Google:</b> Announced support for MCP and complementary Agent2Agent Protocol (A2A)</li>
+                                    <li><b>OpenAI:</b> Has pledged to support the MCP standard</li>
+                                    <li><b>Microsoft:</b> Implementing MCP in Microsoft Copilot Studio</li>
+                                </ul>
+                                <p class="blink" style="color: #FF0000; text-align: center; font-weight: bold; margin-top: 15px;">MCP is revolutionizing how we interact with AI chatbots!</p>
+                            </div>
+                            
+                            <div class="info-box" id="resources">
+                                <div class="section-header">MCP Resources</div>
+                                <p>Want to learn more about MCP? Check out these resources:</p>
+                                <ul>
+                                    <li><a href="https://modelcontextprotocol.io/" target="_blank">Official MCP Website</a></li>
+                                    <li><a href="https://github.com/anthropics/anthropic-cookbook/tree/main/mcp" target="_blank">MCP GitHub Repository</a></li>
+                                    <li><a href="https://docs.anthropic.com/claude/docs/model-context-protocol" target="_blank">Anthropic MCP Documentation</a></li>
+                                </ul>
+                                <div style="text-align: center; margin-top: 15px;">
+                                    <a href="#" class="button">Download MCP SDK</a>
+                                    <a href="#" class="button">MCP Tutorials</a>
+                                </div>
+                            </div>
+                            
+                            <div class="browser-notice">
+                                This site is best viewed with Internet Explorer 6.0 or Netscape Navigator 4.7 at 800x600 resolution.
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        
+        <div id="footer">
+            Copyright &copy; 2000-2025 MCP Information Center. All Rights Reserved.<br>
+            <span style="font-size: 10px;">This page has been tested on IE6 and Netscape 4.7</span>
+        </div>
+    </div>
+</body>
+</html> 
